@@ -1,0 +1,419 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e rodapé */
+header,
+footer {
+    background-color: rgb(138, 43, 226);
+    color: white;
+    padding: 20px 0;
+}
+
+/* Top bar com logo à esquerda e conteúdo centralizado */
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo-left {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo-left img {
+    height: 120px;
+    max-width: 200px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.header-center {
+    text-align: center;
+    flex: 1;
+    
+}
+
+.header-center h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.header-center p {
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Seções gerais */
+section {
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #f3e5ff;
+    border-left: 5px solid rgb(138, 43, 226);
+    border-radius: 8px;
+}
+
+section h2 {
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+
+section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Lista de produtos na index */
+.products ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.products li {
+    background-color: #eee;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Contato */
+.contact a {
+    color: blueviolet;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Página de produtos */
+.product-intro {
+    background-color: #f3e5ff;
+    border-left: 5px solid blueviolet;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.product-intro h2 {
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 2px solid blueviolet;
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.02);
+}
+
+.product-item h3 {
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    color: #333;
+}
+
+/* Estilos adicionais para fornecedores */
+
+/* Benefícios */
+.beneficios ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.beneficios li {
+    background-color: #e0cfff;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Depoimentos */
+.depoimentos blockquote {
+    background-color: #fff;
+    border-left: 5px solid blueviolet;
+    padding: 15px 20px;
+    margin: 20px 0;
+    font-style: italic;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.depoimentos strong {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* FAQ interativo */
+.faq details {
+    background-color: #fff;
+    border: 2px solid blueviolet;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.faq summary {
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.1em;
+}
+
+.faq p {
+    margin-top: 10px;
+    color: #444;
+}
+
+/* Botão de formulário */
+.seja-fornecedor a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.seja-fornecedor a:hover {
+    background-color: #9932cc;
+}
+
+/* Página de Endereço */
+.endereco-info,
+.horarios,
+.mapa {
+    background-color: #f3e5ff;
+    border-left: 5px solid blueviolet;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.endereco-info h2,
+.horarios h2,
+.mapa h2 {
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+
+.intro-endereço {
+  background-color: #f3e5ff;
+    border-left: 5px solid blueviolet;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.horarios ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.horarios li {
+    background-color: #eee;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* --- ESTILOS DO NOVO BANNER DE VÍDEO --- */
+
+/* Estilos para o Banner de Vídeo */
+.video-banner {
+    position: relative;
+    width: 100%;
+    /* Altura do banner, ajuste conforme necessário */
+    height: 60vh; 
+    overflow: hidden;
+    /* Para não ter margem entre o header e o main */
+    margin-bottom: 0; 
+}
+
+.banner-video {
+    /* Garante que o vídeo cubra toda a área do container */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Camada escura semitransparente para melhorar a legibilidade do texto */
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.video-overlay h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    /* Cor de destaque para o título */
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.video-overlay p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: rgb(138, 43, 226); /* Cor da marca */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid white;
+}
+
+.cta-button:hover {
+    background-color: #9932cc;
+    transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .video-banner {
+        /* Altura menor em dispositivos menores */
+        height: 40vh; 
+    }
+
+    .video-overlay h2 {
+        font-size: 2em;
+    }
+
+    .video-overlay p {
+        font-size: 1.1em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+
+/* Responsividade geral (do código original) */
+@media (max-width: 600px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .logo-left {
+        position: static;
+        transform: none;
+        margin-bottom: 20px;
+    }
+
+    .header-center {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+}

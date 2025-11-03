@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Açaí do Theo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <nav aria-label="Menu principal">
+          <ul>
+             <li><a href="index.html">Início</a></li>
+            <li><a href="./produtos.html">Produtos</a></li>
+            <li><a href="./sobre.html">Sobre nós</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="./fornecedores.html">Fornecedores</a></li>
+            <li><a href="./endereço.html">Endereço</a></li>
+        
+          </ul>
+        </nav>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-form">
+      <h2>Envie uma mensagem</h2>
+      <form action="mailto:contato@acaidotheo.com.br" method="post" enctype="text/plain">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </form>
+    </section>
+
+    <section class="contact-info">
+      <h2>Outras formas de contato</h2>
+      <p>Email: <a href="mailto:contato@acaidotheo.com.br">contato@acaidotheo.com.br</a></p>
+      <p>Telefone:(31) 99753-4169</p>
+      <p>Endereço: R. São João, 31 - Honório Bicalho - Nova Lima, MG 34000-000</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Açaí do Theo. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
